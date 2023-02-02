@@ -38,7 +38,7 @@ mock = [
 ]
 
 
-def items_per_company(list: list):
+def itens_per_company(list: list):
     companies_dict = {}
     for item in list:
         company_name = item['nome_da_empresa']
