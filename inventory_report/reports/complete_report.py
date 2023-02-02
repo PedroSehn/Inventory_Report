@@ -5,15 +5,15 @@ from inventory_report.reports.ReportTools.sooner_expiration import (
     sooner_expiration,
 )
 from inventory_report.reports.ReportTools.most_items import most_items
-from inventory_report.reports.ReportTools.itens_per_company import (
-    itens_per_company,
+from inventory_report.reports.ReportTools.items_per_company import (
+    items_per_company,
 )
 from inventory_report.reports.ReportTools.stringfy_items import stringfy_items
 
 
 class CompleteReport:
     def generate(list):
-        companies_dict = itens_per_company(list)
+        companies_dict = items_per_company(list)
         string_list = stringfy_items(companies_dict)
         return (
             f"Data de fabricação mais antiga: {oldest_fabrication(list)}\n"
