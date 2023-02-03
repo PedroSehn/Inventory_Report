@@ -16,15 +16,16 @@ class Inventory:
     def import_data(path: str, type: str):
         if '.csv' in path:
             clear_data = csv_importer(path)
-            Inventory.simple_complex(type, clear_data)
+            print(clear_data)
+            return Inventory.simple_complex(type, clear_data)
 
         elif '.json' in path:
             clear_data = json_importer(path)
-            Inventory.simple_complex(type, clear_data)
+            return Inventory.simple_complex(type, clear_data)
 
         elif '.xml' in path:
             clear_data = xml_importer(path)
-            Inventory.simple_complex(type, clear_data)
+            return Inventory.simple_complex(type, clear_data)
 
 
 Inventory.import_data = staticmethod(Inventory.import_data)
