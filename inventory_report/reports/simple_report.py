@@ -8,7 +8,7 @@ from inventory_report.reports.ReportTools.most_items import most_items
 
 
 class SimpleReport:
-    def generate(list):
+    def generate(list: list):
         return (
                 f"Data de fabricação mais antiga: {oldest_fabrication(list)}\n"
                 f"Data de validade mais próxima: {sooner_expiration(list)}\n"

@@ -1,4 +1,3 @@
-
 def items_per_company(list: list):
     companies_dict = {}
     for item in list:
