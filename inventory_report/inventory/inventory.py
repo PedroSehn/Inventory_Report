@@ -7,10 +7,10 @@ from inventory_report.importer.xml_importer import xml_importer
 
 class Inventory:
 
-    def simple_complex(order, clear_data):
-        if order == 'simple':
+    def simple_complex(type, clear_data):
+        if type == 'simples':
             return SimpleReport.generate(clear_data)
-        else:
+        elif type == 'completo':
             return CompleteReport.generate(clear_data)
 
     def import_data(path: str, type: str):
