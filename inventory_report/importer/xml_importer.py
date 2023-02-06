@@ -14,8 +14,3 @@ class XmlImporter(Importer):
 
 
 XmlImporter.import_data = staticmethod(XmlImporter.import_data)
-
-# def xml_importer(path: str):
-    # with open(path) as file:
-        # data = xmltodict.parse(file.read())['dataset']['record']
-        # return data
