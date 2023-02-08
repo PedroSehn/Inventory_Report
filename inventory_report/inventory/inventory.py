@@ -24,7 +24,7 @@ class Inventory:
             return Inventory.simple_complex(type, clear_data)
 
         elif '.xml' in path:
-            clear_data = XmlImporter.import_data(path)
+            clear_data = XmlImporter.importar_data(path)
             return Inventory.simple_complex(type, clear_data)
 
 
